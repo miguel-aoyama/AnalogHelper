@@ -1,3 +1,5 @@
+/*全体
+-------------------*/
 html{
   height:100%;
 }
@@ -5,33 +7,20 @@ body{
   height:100%;
   background-color:#E4E4E4;
   margin:0;
-  max-width: 1300px;
 }
 ul{
   list-style: none;
   padding:0px;
   text-align: left;
 }
-label{
-  margin:0;
-}
-
 .main{
   height:100%;
   width:100%;
   display:flex;
   text-decoration: none;
 }
-nav{
-  height:60px;
-  display:flex;
-  justify-content:space-between;
-  background-color:#FDFDFD;
-}
-.title{
-  margin-left:30px;
-}
-
+/*サイドバー
+-------------------*/
 .category{
   width:200px;
   background-color:#F5F5F5;
@@ -72,6 +61,8 @@ nav{
   padding:5px;
   margin-top:5px;
 }
+/*ボード
+---------------------*/
 .board-index{
   display: flex;
   flex-wrap: wrap;
@@ -181,4 +172,7 @@ table{
 .dco, .vcf, .vca{
   display:flex;
   align-items:center;
+}
+label{
+  margin:0;
 }
