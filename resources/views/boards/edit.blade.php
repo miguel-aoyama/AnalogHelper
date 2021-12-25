@@ -166,7 +166,7 @@
       </div>
       <input type="hidden" name="user_id" value="{{$board->user_id}}">
       <input type="hidden" name="category_id" value="{{$board->category_id}}">
-      <input type="submit" name="" value="送信する">
+      <input type="submit" name="" class="update-btn" value="Edit">
     </form>
     </div>
   </div>

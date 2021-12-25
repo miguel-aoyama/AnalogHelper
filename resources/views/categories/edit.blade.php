@@ -10,7 +10,7 @@
     <input type="hidden" name="_method" value="PUT">
     <input type="text" name="title" value="{{$category->title}}">
     <input type="hidden" name="user_id" value="{{$category->user_id}}">
-    <input type="submit" name="" value="変更する">
+    <input type="submit" name="" class="update-btn" value="Edit">
   </form>
 
 @endsection

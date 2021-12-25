@@ -158,7 +158,7 @@
      </tr>
   </table>
   </div>
-    <input type="submit" name="" value="送信する">
+    <input type="submit" name="" class="create" value="Add">
   </form>
 </div>
 @endsection

@@ -7,7 +7,7 @@
     @csrf
     @include('components.form-error')
     <input type="text" name="title" value="">
-    <input type="submit" name="" value="作成">
+    <input type="submit" name="" class="create" value="Add">
   </form>
 
 @endsection
