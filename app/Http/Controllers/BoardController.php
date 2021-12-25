@@ -51,4 +51,14 @@ class BoardController extends Controller
       'category' => $board->category_id,
     ]);
   }
+
+  public function clone(Request $request, Board $board)
+  {
+    $oldrow = Board::find($request->id);
+    $newrow = $oldrow->replicate();
+    $newrow->save();
+    return redirect()->route('categories.show',[
+      'category' => $request->category_id,
+    ]);
+  }
 }

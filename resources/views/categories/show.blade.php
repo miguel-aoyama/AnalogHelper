@@ -44,6 +44,14 @@
                 <p>{{$board->title}}</p>
               </div>
               <div class="ud-wrapper">
+                <div class="board-clone">
+                  <form action="{{route('boards.clone', ['board' => $board])}}" method="post">
+                    @csrf
+                    <input type="hidden" name="id" value="{{$board->id}}">
+                    <input type="hidden" name="category_id" value="{{$board->category_id}}">
+                    <button type="submit" name="button">Clone</button>
+                  </form>
+                </div>
                 <div class="board-update">
                   <a href="{{route('boards.edit', ['board' => $board])}}" class="update-btn">Edit</a>
                 </div>
