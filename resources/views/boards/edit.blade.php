@@ -9,6 +9,7 @@
       <form action="{{route('boards.update',['board' => $board])}}" method="post" >
         @method('PUT')
         @csrf
+        @include('components.form-error')
         <input type="hidden" name="_method" value="PUT">
         <div class="board-title">
             <input type="text" name="title" value="{{$board->title}}">

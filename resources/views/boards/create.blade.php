@@ -7,13 +7,7 @@
 
   <form class="" action="{{route('boards.store')}}" method="post">
   @csrf
-  @if ($errors->any())
-    <ul>
-      @foreach($errors->all() as $error)
-        <li>{{$error}}</li>
-      @endforeach
-    </ul>
-  @endif
+  @include('components.form-error')
     <input type="text" name="title" value="">
     <input type="hidden" name="id" value="{{$id}}">
     <div class="board-container">
