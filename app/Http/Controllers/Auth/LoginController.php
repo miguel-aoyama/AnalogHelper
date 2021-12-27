@@ -39,7 +39,7 @@ class LoginController extends Controller
         $this->middleware('guest')->except('logout');
     }
 
-    public function login() {
+    /*public function login() {
 
       $email = 'test@com';
       $password = 'testuser';
@@ -48,5 +48,5 @@ class LoginController extends Controller
         return redirect()->route('home');
       }
       return redirect('/');
-    }
+    }*/
 }
