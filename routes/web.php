@@ -23,7 +23,7 @@ Route::get('/', function(){
     return redirect('/login');
 });
 
-//Route::get('login/portfolio', [LoginController::class,'login'])->name('portfolio');
+Route::get('login/portfolio', [LoginController::class,'login'])->name('portfolio');
 
 Auth::routes();
 
