@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BoardController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\Auth\LoginController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,6 +22,8 @@ Route::get('/', function(){
 
     return redirect('/login');
 });
+
+Route::get('login/portfolio', [LoginController::class,'login'])->name('portfolio');
 
 Auth::routes();
 
