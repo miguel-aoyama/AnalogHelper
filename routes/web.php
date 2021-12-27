@@ -38,6 +38,7 @@ Route::group(['middleware' => 'auth'], function(){
   Route::get('boards/edit/{board}', [BoardController::class, 'edit'])->name('boards.edit');
   Route::put('boards/edit/{board}', [BoardController::class,'update'])->name('boards.update');
   Route::delete('boards/{board}',[BoardController::class,'destroy'])->name('boards.destroy');
+  Route::post('boards/clone', [BoardController::class,'clone'])->name('boards.clone');
 });
 
 Route::group(['middleware' => 'auth'], function(){
