@@ -3,6 +3,7 @@
 @section('title','board')
 
 @section('content')
+<div class="main">
 @include('components.sidebar', ['items' => $items])
     <div id="range">
       <div class="top">
